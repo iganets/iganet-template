@@ -22,9 +22,16 @@ Don't commit to this repository as it serves as a generic template repository. I
 
 _Optional:_
 
-4. By default, the template repository contains the following GitHub actions
+4. By default, the template repository contains the following [GitHub actions](https://github.com/features/actions)
 
-   - `.github/workflows/gitlab-sync.yml` synchronizes commits between GitHub and GitLab. If you want this synchronization to work you need to create a repository with the same name in https://gitlab.com/IgANets. Otherwise, delete this file
+   - `.github/workflows/gitlab-sync.yml` synchronizes commits between GitHub and GitLab. If you want this synchronization to work you need to create a repository at https://gitlab.com and set the following [repository secrets](https://docs.github.com/en/actions/how-tos/writing-workflows/choosing-what-your-workflow-does/using-secrets-in-github-actions)
+     | repository secret | content |
+     |---|---|
+     | `GITLAB_REPO_USERNAME` | username that enables commits to the repository |
+     | `GITLAB_REPO_TOKEN` | token that enables commits to the repository |
+     | `GITLAB_REPO_URL`   | https://gitlab.com/organization/repository |
+     
+     Otherwise, delete this file.
    - `.github/workflows/cmake-multi-platform.yml` basic skeleton for multi-platform CI/CD
 
 ## Usage instructions
