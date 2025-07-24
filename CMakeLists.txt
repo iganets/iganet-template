@@ -33,7 +33,6 @@ if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
     iganet_core
     URL https://github.com/IgANets/iganet/archive/refs/heads/master.zip
   )
-  set(IGANET_BUILD_EXAMPLES  OFF CACHE BOOL "" FORCE)  
   FetchContent_MakeAvailable(iganet_core)
   FetchContent_GetProperties(iganet_core)
   
