@@ -1,5 +1,5 @@
 on:
-  [pull, delete]
+  [push, delete]
 
 jobs:
   sync:
