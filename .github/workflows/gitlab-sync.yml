@@ -2,4 +2,5 @@ on:
   [pull, delete]
 
 jobs:
-  uses: iganets/.github/workflows/gitlab-sync.yml@main
+  sync:
+    uses: iganets/.github/workflows/gitlab-sync.yml@main
