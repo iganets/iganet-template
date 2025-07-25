@@ -5,3 +5,7 @@ on:
 jobs:
   sync:
     uses: iganets/.github/.github/workflows/gitlab-sync.yml@main
+    secrets:
+      GITLAB_REPO_TOKEN: ${{ secrets.GITLAB_REPO_TOKEN }}
+      GITLAB_REPO_URL: ${{ secrets.GITLAB_REPO_ULR }}
+      GITLAB_REPO_USERNAME: ${{ secrets.GITLAB_REPO_USERNAME }}
