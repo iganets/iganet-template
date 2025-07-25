@@ -1,5 +1,4 @@
-on:
-  [push, delete]
+on: [push, delete]
 
 jobs:
   sync:
