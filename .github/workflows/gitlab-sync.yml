@@ -4,4 +4,4 @@ on:
 
 jobs:
   sync:
-    uses: iganets/.github/workflows/gitlab-sync.yml@main
+    uses: iganets/.github/.github/workflows/gitlab-sync.yml@main
