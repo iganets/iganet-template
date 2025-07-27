@@ -5,3 +5,5 @@ on:
 jobs:
   build:
     uses: iganets/.github/.github/workflows/cmake-multi-platform.yml@main
+    with:
+      IGANET_OPTIONAL: "template"
