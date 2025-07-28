@@ -1,9 +1,0 @@
-version: 2.1
-
-jobs:
-  build:
-    machine:
-      image: linux-cuda-12:default
-    resource_class: gpu.nvidia.small
-    steps:
-      - run: nvidia-smi
