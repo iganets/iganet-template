@@ -29,10 +29,19 @@ add_library(iganet::TEMPLATE ALIAS iganet_TEMPLATE)
 ########################################################################
 if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
   include(FetchContent)
-  FetchContent_Declare(
-    iganet_core
-    URL https://github.com/IgANets/iganet/archive/refs/heads/master.zip
-  )
+
+  if(EXISTS "${CMAKE_SOURCE_DIR}/.git")
+    FetchContent_Declare(
+      iganet_core
+      GIT_REPOSITORY https://github.com/iganets/iganet.git
+    )
+  else()  
+    FetchContent_Declare(
+      iganet_core
+      URL https://github.com/IgANets/iganet/archive/refs/heads/master.zip
+    )
+  endif()
+  
   FetchContent_MakeAvailable(iganet_core)
   FetchContent_GetProperties(iganet_core)
   
