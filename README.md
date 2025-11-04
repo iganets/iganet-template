@@ -1,7 +1,7 @@
 # IGAnets-Template
 
 [![GitlabSync](https://github.com/iganets/iganet-template/actions/workflows/gitlab-sync.yml/badge.svg)](https://github.com/iganets/iganet-template/actions/workflows/gitlab-sync.yml)
-[![CMake on multiple platforms](https://github.com/iganets/iganet-template/actions/workflows/cmake-multi-platform.yml/badge.svg)](https://github.com/iganets/iganet-template/actions/workflows/cmake-multi-platform.yml)
+[![CI](https://github.com/iganets/iganet-template/actions/workflows/ci-push-pr.yml/badge.svg)](https://github.com/iganets/iganet-template/actions/workflows/ci-push-pr.yml)
 [![Documentation](https://img.shields.io/badge/docs-mkdocs-blue.svg)](https://iganets.github.io/iganet/)
 
 [![GitHub Releases](https://img.shields.io/github/release/iganets/iganet-template.svg)](https://github.com/iganets/iganet-template/releases)
@@ -32,7 +32,7 @@ _Optional:_
      | `GITLAB_REPO_URL`   | https://gitlab.com/organization/repository |
      
      Otherwise, delete this file.
-   - `.github/workflows/cmake-multi-platform.yml` basic skeleton for multi-platform CI/CD
+   - `.github/workflows/ci-push-pr.yml` a basic skeleton for multi-platform compile and testing upon  push and pull request
 
 ## Usage instructions
 
